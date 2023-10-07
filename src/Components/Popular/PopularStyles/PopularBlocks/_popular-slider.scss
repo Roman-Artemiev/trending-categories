@@ -1,0 +1,35 @@
+.popular {
+    &__slider-wrapper {
+        height: 148px;
+        width: calc((((#{$wrapper-width} - 30px) / 100) * 15) + (#{$wrapper-width} - 30px));
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .popular__slider-arrow {
+            width: 42px;
+            height: 42px;
+
+            background-color: rgba(255, 255, 255, 0);
+
+            background-image: url(../../../assets/slider-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            cursor: pointer;
+        }
+
+        .popular__slider-arrow--prev {
+            transform: rotate(180deg);
+        }
+
+        .popular__slider {
+            width: calc(#{$wrapper-width} - 30px);
+            height: 100%;
+
+            border: 0.5px solid #E2E0DB;
+            background: #FFF;
+        }
+    }
+}
