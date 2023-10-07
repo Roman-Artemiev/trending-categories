@@ -6,7 +6,8 @@ $federo: 'Federo', sans-serif;
 $body-bg: #ffffff;
 $title-h1: #3A3A3A;
 
-$slider-title-color: #757575;
+$slider-border-color: #E2E0DB;
+$slider-item-color: #757575;
 $slider-selected-title-color: #505050;
 $slider-selected-bg: #FBF9F3;
 $slider-selected-pic-color: #4F4E4E;
@@ -20,3 +21,4 @@ $wrapper-padding: 0 15px;
 
 // Slider
 $number-items-slider: 6; 
+$slider-item-width: calc((#{$wrapper-width} - 30px) / #{$number-items-slider});

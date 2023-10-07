@@ -1,3 +1,5 @@
+@import "./../../../../Styles/App/base/vars";
+
 .popular {
     &__slider-wrapper {
         height: 148px;
@@ -13,7 +15,7 @@
 
             background-color: rgba(255, 255, 255, 0);
 
-            background-image: url(../../../assets/slider-arrow.svg);
+            background-image: url(../../../../assets/slider-arrow.svg);
             background-repeat: no-repeat;
             background-position: center;
 
@@ -25,14 +27,27 @@
         }
 
         .popular__slider {
+            position: relative;
+
             width: calc(#{$wrapper-width} - 30px);
             height: 100%;
 
             display: flex;
             align-items: center;
             
-            border: 0.5px solid #E2E0DB;
-            background: #FFF;
+            border: 0.5px solid $slider-border-color;
+            overflow: hidden;
+            &-thumb {
+                position: absolute;
+
+                width: $slider-item-width;
+                height: 148px;
+
+                background-color: $slider-selected-bg;
+
+                z-index: 1;
+                transition: .8s;
+            }
         }
     }
 }

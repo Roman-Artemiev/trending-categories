@@ -8,35 +8,26 @@
     width: 42px;
     height: 42px;
     background-color: rgba(255, 255, 255, 0);
-    background-image: url(../../../assets/slider-arrow.svg);
+    background-image: url(../../../../assets/slider-arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer; }
   .popular__slider-wrapper .popular__slider-arrow--prev {
     transform: rotate(180deg); }
   .popular__slider-wrapper .popular__slider {
+    position: relative;
     width: calc(1140px - 30px);
     height: 100%;
     display: flex;
     align-items: center;
     border: 0.5px solid #E2E0DB;
-    background: #FFF; }
+    overflow: hidden; }
+    .popular__slider-wrapper .popular__slider-thumb {
+      position: absolute;
+      width: calc((1140px - 30px) / 6);
+      height: 148px;
+      background-color: #FBF9F3;
+      z-index: 1;
+      transition: .8s; }
 
-.popular {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-  .popular-title {
-    margin-bottom: 78px;
-    font-family: "Federo", sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    text-align: center;
-    color: #3A3A3A;
-    line-height: 125%;
-    letter-spacing: 0.8px; }
-
-/*# sourceMappingURL=popular.css.map */
+/*# sourceMappingURL=popular-slider.css.map */

@@ -1,22 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import "./SliderItemStyles/slider-item.css";
 
-class SliderItem extends Component {
-    render() {
-        const { backgroundImage, title } = this.props;
-
-        const itemStyle = {
-            backgroundImage: `url(${backgroundImage})`
-        };
-
-        return (
-            <div className='slider__item'>
-                <div className="slider__item-pic" style={itemStyle}></div>
-                <h6 className='slider__item-title'>{title}</h6>
+const SliderItem = ({ handleClick, title, image, isActive }) => {
+    return (
+        <div onClick={handleClick} className={`slider-item ${isActive ? 'active' : ''}`}>
+            <div className="slider-item__image">
+                {image}
             </div>
-        );
-    }
+            <div className="slider-item__content">
+                <h2 className="slider-item__title">{title}</h2>
+            </div>
+        </div>
+    );
 }
 
 export default SliderItem;

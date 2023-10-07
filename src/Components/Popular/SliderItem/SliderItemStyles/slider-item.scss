@@ -1,7 +1,7 @@
 @import "../../../../Styles/App/base/vars";
 
-.slider__item {
-    width: calc((#{$wrapper-width} - 30px) / #{$number-items-slider});
+.slider-item {
+    width: $slider-item-width;
     height: 100%;
 
     display: flex;
@@ -9,25 +9,37 @@
     justify-content: center;
     flex-direction: column;
 
-    background-color: $slider-selected-bg;
+    z-index: 2;
 
-    &-title {
-        color: $slider-title-color;
+    &.active &__image svg path{
+        fill: $slider-selected-pic-color;
+        transition: .8s;
+    }
+
+    &.active &__title {
+        color: $slider-selected-title-color;
+        transition: .8s;
+    }
+
+    &__title {
+        color: $slider-item-color;
         text-align: center;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: -0.49px;
+        cursor: pointer;
     }
 
-    &-pic {
+    &__image {
         margin-bottom: 12px;
 
         width: 78px;
         height: 78px;
         
-        // background-image: url(../../../../assets/sliderItems/slider__item-1.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
+        cursor: pointer;
     }
 }
+
