@@ -1,4 +1,5 @@
 .popular__slider-wrapper {
+  margin-bottom: 48px;
   height: 148px;
   width: calc((((1140px - 30px) / 100) * 15) + (1140px - 30px));
   display: flex;

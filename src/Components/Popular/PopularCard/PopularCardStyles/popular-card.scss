@@ -1,0 +1,70 @@
+@import "./../../../../Styles/App/base/vars";
+
+.popular__card {
+    position: relative;
+
+    width: 255px;
+    height: 342px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: $white;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.10);
+
+    &-img {
+        margin-bottom: 30px;
+
+        width: 160px;
+        height: 170px;
+
+        background-position: center;
+        background-size: 95% 95%;
+        background-repeat: no-repeat;
+    }
+
+    &-product-name {
+        margin-bottom: 8px;
+
+        color: $card-title-color;
+        font-family: $open-sans;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: -0.56px;
+        font-weight: 400;
+
+        font-style: normal;
+    }
+
+    &-price {
+        color: $card-price-color;
+        font-family: $federo;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.28px;
+    }
+    &__actions-container {
+        position: absolute;
+        right: 4px;
+        transform: translateY(15px);
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+    }
+    &-action {
+        width: 28px;
+        height: 28px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 0.2px solid $card-action-stroke;
+        background: $white;
+
+        cursor: pointer;
+    }
+}

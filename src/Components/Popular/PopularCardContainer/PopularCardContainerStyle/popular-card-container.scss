@@ -1,0 +1,9 @@
+@import "./../../../../Styles/App/base/vars";
+
+.popular__card-container {
+    width: calc(#{$wrapper-width} - 30px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

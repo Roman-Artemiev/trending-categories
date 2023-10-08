@@ -1,0 +1,7 @@
+.popular__card-container {
+  width: calc(1140px - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=popular-card-container.css.map */

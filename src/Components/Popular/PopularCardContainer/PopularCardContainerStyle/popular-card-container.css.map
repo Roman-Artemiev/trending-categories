@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,wBAAyB;EACrB,KAAK,EAAE,mBAA8B;EAErC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa",
+"sources": ["popular-card-container.scss"],
+"names": [],
+"file": "popular-card-container.css"
+}

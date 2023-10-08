@@ -2,6 +2,8 @@
 
 .popular {
     &__slider-wrapper {
+        margin-bottom: 48px;
+
         height: 148px;
         width: calc((((#{$wrapper-width} - 30px) / 100) * 15) + (#{$wrapper-width} - 30px));
     

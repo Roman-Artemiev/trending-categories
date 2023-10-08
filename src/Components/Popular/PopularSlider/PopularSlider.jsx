@@ -27,38 +27,8 @@ const PopularSlider = () => {
         }
     }
 
-    // const goToItem1 = () => {
-    //     setTranslateX(0);
-    //     setCurrentItemId(1);
-    // }
-    
-    // const goToItem2 = () => {
-    //     setTranslateX(100);
-    //     setCurrentItemId(2);
-    // }
-    
-    // const goToItem3 = () => {
-    //     setTranslateX(200);
-    //     setCurrentItemId(3);
-    // }
-    
-    // const goToItem4 = () => {
-    //     setTranslateX(300);
-    //     setCurrentItemId(4);
-    // }
-    
-    // const goToItem5 = () => {
-    //     setTranslateX(400);
-    //     setCurrentItemId(5);
-    // }
-    
-    // const goToItem6 = () => {
-    //     setTranslateX(500);
-    //     setCurrentItemId(6);
-    // }
-
     const goToItem = (index) => {
-        const translateXValue = index * 100;  // Assuming each item has a 100px width
+        const translateXValue = index * 100;
         setTranslateX(translateXValue);
         setCurrentItemId(index);
     }
