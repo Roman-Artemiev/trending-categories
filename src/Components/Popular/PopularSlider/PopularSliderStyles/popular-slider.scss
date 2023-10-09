@@ -28,7 +28,7 @@
             transform: rotate(180deg);
         }
 
-        .popular__slider {
+        .popular__slider-container {
             position: relative;
 
             width: calc(#{$wrapper-width} - 30px);
@@ -39,7 +39,7 @@
             
             border: 0.5px solid $slider-border-color;
             overflow: hidden;
-            &-thumb {
+            .popular__slider-thumb {
                 position: absolute;
 
                 width: $slider-item-width;

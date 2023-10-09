@@ -15,7 +15,7 @@
     cursor: pointer; }
   .popular__slider-wrapper .popular__slider-arrow--prev {
     transform: rotate(180deg); }
-  .popular__slider-wrapper .popular__slider {
+  .popular__slider-wrapper .popular__slider-container {
     position: relative;
     width: calc(1140px - 30px);
     height: 100%;
@@ -23,7 +23,7 @@
     align-items: center;
     border: 0.5px solid #E2E0DB;
     overflow: hidden; }
-    .popular__slider-wrapper .popular__slider-thumb {
+    .popular__slider-wrapper .popular__slider-container .popular__slider-thumb {
       position: absolute;
       width: calc((1140px - 30px) / 6);
       height: 148px;

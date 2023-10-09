@@ -1,0 +1,25 @@
+.popular__cart-icon {
+  margin-right: 10px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer; }
+.popular .cart-icon__count {
+  position: absolute;
+  top: 14px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  line-height: 0.5;
+  border-radius: 50%;
+  background-color: #ee940c; }
+
+/*# sourceMappingURL=popular-cart-icon.css.map */
