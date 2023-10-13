@@ -4,7 +4,7 @@ import "./PopularSliderStyles/popular-slider.css";
 import SliderItem from '../SliderItem/SliderItem';
 import PopularCardContainer from '../PopularCardContainer/PopularCardContainer';
 
-const PopularSlider = () => {
+const PopularSlider = ({cartCount, setCartCount}) => {
     const [translateX, setTranslateX] = useState(0);
     const [currentItemId, setCurrentItemId] = useState(0);
 
@@ -119,6 +119,8 @@ const PopularSlider = () => {
 
             <div className="wrapper">
                 <PopularCardContainer
+                    cartCount={cartCount}  
+                    setCartCount={setCartCount}
                     containerID = {currentItemId}
                 />
             </div>

@@ -34,7 +34,7 @@ import Bed2 from "./../../../assets/popularBed/bed-2.png";
 import Bed3 from "./../../../assets/popularBed/bed-3.png";
 
 
-function PopularCardContainer( props ) {
+function PopularCardContainer( { containerID, cartCount, setCartCount} ) {
 
     const cardData = [
         {
@@ -141,53 +141,42 @@ function PopularCardContainer( props ) {
         },
     ]
 
-    // console.log(cardData[props.containerID].imagePath)
+    // console.log(props);
+    const currentCardData = cardData[containerID];
 
-    const currentCardData = cardData[props.containerID];
-
-
-    console.log(props.containerID)
     return (
-        <div id={props.containerID} className='popular__card-container'>
+        <div id={containerID} className='popular__card-container'>
             <PopularCard
+                 cartCount={cartCount}  
+                 setCartCount={setCartCount}
                 image={currentCardData[`imagePath${0}`]}
                 productName={currentCardData[`name${0}`]}
                 price={currentCardData[`price${0}`]}
             />
 
             <PopularCard
+                 cartCount={cartCount}  
+                setCartCount={setCartCount}
                 image={currentCardData[`imagePath${1}`]}
                 productName={currentCardData[`name${1}`]}
                 price={currentCardData[`price${1}`]}
             />
 
             <PopularCard
+                cartCount={cartCount}  
+               setCartCount={setCartCount}
                 image={currentCardData[`imagePath${2}`]}
                 productName={currentCardData[`name${2}`]}
                 price={currentCardData[`price${2}`]}
             />
 
             <PopularCard
+                cartCount={cartCount}  
+                 setCartCount={setCartCount}
                 image={currentCardData[`imagePath${3}`]}
                 productName={currentCardData[`name${3}`]}
                 price={currentCardData[`price${3}`]}
             />
-            
-            {/* <PopularCard
-                image = {}
-                productName = "Adkins Dressing Table"
-                price = "$899.00"
-            />
-            <PopularCard
-                image = {}
-                productName = "Hironpal Dressing Table"
-                price = "$350.00"
-            />
-            <PopularCard
-                image = {}
-                productName = "Deco Dressing Table"
-                price = "$800.00"
-            /> */}
         </div>
     )
 }

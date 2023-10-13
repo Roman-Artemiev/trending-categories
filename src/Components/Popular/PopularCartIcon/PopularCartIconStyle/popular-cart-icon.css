@@ -1,6 +1,14 @@
+.popular__cart-wrapper {
+  position: absolute;
+  top: 0vh;
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: end; }
 .popular__cart-icon {
+  position: absolute;
+  top: 5vh;
   margin-right: 10px;
-  position: relative;
   width: 60px;
   height: 60px;
   display: flex;

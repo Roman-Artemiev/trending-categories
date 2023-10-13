@@ -29,11 +29,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; }
-  .popular__cart-wrapper {
-    width: 1140px;
-    display: flex;
-    align-items: center;
-    justify-content: end; }
   .popular-title {
     margin-bottom: 78px;
     font-family: "Federo", sans-serif;
