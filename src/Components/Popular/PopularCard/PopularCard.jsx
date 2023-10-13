@@ -16,7 +16,11 @@ function PopularCard( {image, productName, price, changeImgFun, cartCount, setCa
 
     const addToCart = () => {
         setCartCount(cartCount + 1);
-        console.log(cartCount);
+        // console.log(cartCount);
+        
+        // console.log(productName);
+        // console.log(price);
+        // console.log(cardStyle);
     }
 
     return (

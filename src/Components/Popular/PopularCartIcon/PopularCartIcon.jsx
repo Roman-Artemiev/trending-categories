@@ -3,7 +3,7 @@ import React from 'react'
 import "./PopularCartIconStyle/popular-cart-icon.css";
 
 function PopularCartIcon( {cartCount} ) {
-    console.log(cartCount);
+    // console.log(cartCount);
 
     return (
         <div className="popular__cart-wrapper">
